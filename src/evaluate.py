@@ -2,20 +2,7 @@
 #
 # scripts tests various ways of bulk inserting to various databases
 #
-# 1. Mutliple single inserts (multiple queries)
-# 2. Single multiple insert (single query)
-# 3. Database specific bulk insert
-#
-# TODO:
-# - number of times to run evaluations becomes var
-# - store results and run calculations on results
-# - better display of results (text, graphically)
-# - apply better stats analysis on results (median, mean, max, min... learn stats)
-# - add frameworks (Flask, bottle, brubeck, django, webpy)
-# - add ORMs (django, sqlalchemy)
-#
 
-import MySQLdb
 from psql import PostgreSQLWrapper as psql
 from mysql import MySQLWrapper as mysql
 from sqlite import SQLiteWrapper as sqlite
